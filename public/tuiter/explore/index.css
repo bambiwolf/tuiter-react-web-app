@@ -1,0 +1,26 @@
+.explore-page {
+    background-color: black;
+}
+.explore-search-bar {
+    margin-left: 14px;
+    margin-right: 14px;
+    background-color: black;
+}
+.explore-search-bar-text-area {
+    padding-left: 100px;
+    font-size: 200%;
+    background-color: #5A5A5A;
+    border-radius: 50px;
+    color: white;
+    height: 100px;
+    border-width: thin;
+    border-color: #5A5A5A;
+    width: 80%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-size: 100%;
+}
+.explore-search-bar-cog-icon {
+    float: right;
+}

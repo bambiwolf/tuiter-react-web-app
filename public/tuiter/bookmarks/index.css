@@ -1,20 +1,110 @@
-.bookmarks-page{
-    width: 100%;
+a {
+    text-decoration: none;
+    color: white;
+}
+.wd-bookmarks-page{
+    width: calc(100% - 10px);
     background-color: black;
+    box-sizing: border-box;
+    color: white;
 }
 
-.bookmarks-bar{
-    outline-width: thin;
-    padding-top: 12px;
-    margin-left: 16px;
-    margin-right: 14px;
-    padding-right: 50px;
-    width: 85%;
+.wd-bookmarks-bar{
+    padding: 12px 16px;
+    width: calc(100% - 40px);
+    border: lightgray solid 1px;
 }
 
-.bookmarks-large-label{
+.wd-bookmarks-large-label{
     font-size: 20px;
     font-weight: bold;
-    padding-bottom: 10px;
     color: white;
+}
+.wd-bookmarks-user-handle{
+    color: lightgray;
+    font-size: 13px;
+}
+.wd-blue-ellipses-float-right{
+    float: right;
+    color: rgb(29,161,242);
+    padding-right: 16px;
+    position: relative;
+    bottom: 50px;
+    font-size: 30px;
+}
+.wd-profile-image-bar{
+    color: lightgray;
+    padding-left: 16px;
+    padding-top: 12px;
+    font-size: 15px;
+}
+.wd-user-profile-image-container{
+    float: left;
+}
+.wd-user-profile-image{
+    border-radius: 50%;
+    height: 48px;
+}
+.wd-username{
+    color: white;
+    display: inline-block;
+}
+.wd-bookmark-each{
+    border: lightgray solid 1px;
+    width: calc(100% - 8px);
+    border-top-style: hidden;
+}
+.wd-bookmark-ellipses{
+    float: right;
+    color: lightgray;
+    padding-right: 16px;
+    position: relative;
+    bottom: 30px;
+    right: 16px;
+    font-size: 30px;
+}
+.wd-bookmarks-main-content{
+    display: inline-block;
+    width:  506px;
+    padding-left: 16px;
+    padding-top: 7px;
+    font-size: 15px;
+}
+.wd-bookmarks-image{
+    border-radius: 30px 30px 0 0;
+    width: 504px;
+    height: 264px;
+    margin-top: 12px;
+    border-bottom: lightgray solid 1px;
+    border-left: lightgray solid 1px;
+    border-right: lightgray solid 1px;
+}
+.wd-main-content-label{
+    font-size: 15px;
+    padding: 12px;
+    position:relative;
+    bottom: 5px;
+    border-left: lightgray solid 1px;
+    border-right: lightgray solid 1px;
+    border-bottom: lightgray solid 1px;
+    border-radius: 0 0 30px 30px;
+}
+.wd-main-content-label-blurb{
+    color: lightgray;
+    padding-top: 6px;
+}
+.wd-bookmark-icons-container{
+    color: lightgray;
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 12px;
+}
+.wd-bookmark-icons{
+    height: 16px;
+    padding-right: 12px;
+}
+.wd-bookmark-icons-like{
+    color: red;
 }

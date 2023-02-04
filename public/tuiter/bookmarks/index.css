@@ -1,3 +1,4 @@
+
 a {
     text-decoration: none;
     color: white;
@@ -7,6 +8,7 @@ a {
     background-color: black;
     box-sizing: border-box;
     color: white;
+    font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
 }
 
 .wd-bookmarks-bar{
@@ -22,14 +24,15 @@ a {
 }
 .wd-bookmarks-user-handle{
     color: lightgray;
-    font-size: 13px;
+    font-size: 15px;
+    display: inline-block;
 }
 .wd-blue-ellipses-float-right{
     float: right;
     color: rgb(29,161,242);
     padding-right: 16px;
     position: relative;
-    bottom: 50px;
+    bottom: 30px;
     font-size: 30px;
 }
 .wd-profile-image-bar{
@@ -45,10 +48,6 @@ a {
     border-radius: 50%;
     height: 48px;
 }
-.wd-username{
-    color: white;
-    display: inline-block;
-}
 .wd-bookmark-each{
     border: lightgray solid 1px;
     width: calc(100% - 8px);
@@ -59,7 +58,7 @@ a {
     color: lightgray;
     padding-right: 16px;
     position: relative;
-    bottom: 30px;
+    bottom: 20px;
     right: 16px;
     font-size: 30px;
 }
@@ -74,7 +73,7 @@ a {
     border-radius: 30px 30px 0 0;
     width: 504px;
     height: 264px;
-    margin-top: 12px;
+    margin-top: 30px;
     border-bottom: lightgray solid 1px;
     border-left: lightgray solid 1px;
     border-right: lightgray solid 1px;
@@ -107,4 +106,7 @@ a {
 }
 .wd-bookmark-icons-like{
     color: red;
+}
+.wd-bookmark-main-text{
+    padding-top: 6px;
 }

@@ -8,15 +8,24 @@
     <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
 <body>
+<h2>Hiding and showing responsive content</h2>
+<div class="d-block d-sm-none fa-2x">XS</div>
+<div class="d-none d-sm-block d-md-none fa-2x">S</div>
+<div class="d-none d-md-block d-lg-none fa-2x">M</div>
+<div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+<div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+<div class="d-none d-xxl-block fa-2x">XXL</div>
 
 <div class="container mw-100 w-100">
     <!-- Three Columns of Twitter Explore Page -->
     <div class="row mw-100 w-100 flex-container">
         <!-- Left Column: Navigation -->
-        <div class="container-fluid col-2 d-flex justify-content-end">
-            <div class="w-75 d-sm-block d-none pt-1">
+        <div class="container-fluid d-none d-sm-block col-sm-2 col-md-2 col-lg-1 col-xl-2 d-flex justify-content-end">
+            <div class="w-75 pt-1">
+                <div class="list-group-item">
+                    <a href="../navigation.html" class="link-primary">Back</a>
+                </div>
                 <div class="list-group">
-                    <a href="../navigation.html" class="list-group-item link-primary">Back</a>
                     <i class="list-group-item fab fa-twitter"></i>
                     <a href="../home.html" class="list-group-item list-group-item-action">
                         <i class="fas fa-home"></i>
@@ -67,7 +76,7 @@
             </div>
         </div>
         <!-- Middle Column: Search Bar + Main Content -->
-        <div class="container-fluid flex-grow-1 col-6 pt-1">
+        <div class="container-fluid flex-grow-1 col-4 pt-1">
             <!-- Container for all the Rows of Main Content: search bar, tabs, images, suggested -->
             <div class="container mw-100 w-100">
                 <!-- Search bar -->
@@ -93,7 +102,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="sports.html">Sports</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-md-block d-none">
                             <a class="nav-link" href="entertainment.html">Entertainment</a>
                         </li>
                     </ul>
@@ -206,8 +215,8 @@
             </div>
         </div>
         <!-- Right Column -->
-        <div class="container col-4 d-lg-inline-block justify-content-start">
-            <div class="wd-w-80 flex-shrink-3 d-lg-block d-none pt-1">
+        <div class="container d-none d-lg-block col-lg-4 col-xxl-3 justify-content-start">
+            <div class="wd-w-80 pt-1">
                 <div class="list-group">
                     <!-- Who to Follow Header -->
                     <div class="list-group-item wd-font-weight-bold h9">Who to Follow</div>
@@ -243,7 +252,7 @@
                             </div>
                             <!-- Relativity Space Account Info Bar -->
                             <div class="col-6 float-start">
-                                <div class="wd-font-weight-bold">
+                                <div class="wd-font-weight-bold text-nowrap">
                                     Relativity Space
                                     <i class="fa-solid fa-check"></i>
                                 </div>
@@ -266,7 +275,7 @@
                             </div>
                             <!-- Virgin Galactic Account Info Bar -->
                             <div class="col-6 float-start">
-                                <div class="wd-font-weight-bold">
+                                <div class="wd-font-weight-bold text-nowrap">
                                     Virgin Galactic
                                     <i class="fa-solid fa-check"></i>
                                 </div>

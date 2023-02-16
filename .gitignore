@@ -24,3 +24,5 @@ yarn-error.log*
 
 .idea
 node_modules
+/public/tuiter/explore/old_index.html
+/public/tuiter/NavigationSidebar/index.html

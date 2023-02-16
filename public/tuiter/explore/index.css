@@ -16,43 +16,54 @@
     border-radius: 50px;
     background-color: white;
     color: #495057;
-    padding-left: 50px;
+    padding-left: 60px;
     height: 40px;
     width: calc(100% - 50px);
     position: relative;
     right: 32px;
 }
-.wd-search-icon{
+.search-icon{
     position: relative;
     left: 10px;
     z-index: 1;
 }
-.wd-icon-30{
+.icon-30{
     height: 40px;
     width: 40px;
 }
-.wd-height-40{
+.height-40{
     height: 40px;
 }
-.wd-height-100{
+.height-100{
     max-height: 100px;
     height: 100px;
 }
-.fa-gear.override-fa-color{
-    color: #0d6efd;
+.fit-image{
+    width: 100%;
+    object-fit: cover;
 }
-.wd-nudge-up-40px{
+.nudge-up-30px{
+    position: relative;
+    bottom: 30px;
+}
+.nudge-up-40px{
     position: relative;
     bottom: 40px;
 }
-.wd-font-weight-bold{
+.text-primary.override-bs{
+    color: black;
+}
+.font-weight-bold{
     font-weight: bold;
 }
-.wd-grey-bottom-border{
+.grey-border {
+    outline: 1px solid #e9ecef;
+}
+.grey-bottom-border{
     border-bottom: 1px solid #e9ecef;
     border-left: 1px solid #e9ecef;
     border-right: 1px solid #e9ecef;
 }
-.wd-w-80{
-    width: 100%;
+.w-80{
+    width: 80%;
 }

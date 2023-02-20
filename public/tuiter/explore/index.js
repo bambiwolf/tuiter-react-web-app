@@ -8,7 +8,7 @@ function exploreComponent() {
        <!-- <h2>Explore</h2> -->
   <div class="row mt-2">
    <div class="col-2 col-md-2 col-lg-1 col-xl-2">
-   <a href="../home.html" class="list-group-item-action ps-1"><i class="fas fa-arrow-left"></i></a>
+   <a href="../navigation.html" class="list-group-item-action ps-1"><i class="fas fa-arrow-left"></i></a>
    <!--<h3>Navigation Sidebar</h3>-->
     ${NavigationSidebar()}
    </div>

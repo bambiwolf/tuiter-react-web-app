@@ -19,10 +19,10 @@
     "time": "4d",
     "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
     "image": "tesla_icon.jpg",
-    "liked": true,
-    "replies": 123,
-    "retuits": 432,
-    "likes": 2345,
+    "liked": false,
+    "replies": 234,
+    "retuits": 543,
+    "likes": 3456,
     "handle": "@tesla",
     "tuit": "Autopilot is an advanced driver assistance system that assists your car with steering, accelerating, and braking for other vehicles and pedastrians wiwthin its lane."
   },
@@ -34,9 +34,9 @@
     "title": "Cybertruck tuit title",
     "image": "spaceprof.jpg",
     "liked": true,
-    "replies": 123,
-    "retuits": 432,
-    "likes": 2345,
+    "replies": 345,
+    "retuits": 321,
+    "likes": 1234,
     "handle": "@spacex",
     "tuit": "Tesla cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed. Curiosity rover is now on its way to Mars Base 1"
   }

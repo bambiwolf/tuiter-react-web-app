@@ -1,4 +1,13 @@
 import React from "react";
+import {FaRegComment} from "react-icons/fa";
+import {AiOutlineHeart, AiOutlineRetweet} from "react-icons/ai";
+import {BsShare} from "react-icons/bs";
+import {useDispatch} from "react-redux";
+import {likeTuit, unlikeTuit}
+    from "../tuits-reducer";
+import {FcLike} from "react-icons/fc";
+
+
 const TuitStats = (
     {
         tuit = {
@@ -9,17 +18,30 @@ const TuitStats = (
             "image": "tesla_icon.jpg",
             "replies": 0,
             "retuits": 0,
-            "likes": 0
+            "likes": 0,
+            "liked": false
         }
     }
 ) => {
+    const dispatch = useDispatch();
+    //if the heart icon is clicked, then the tuit's boolean should be flipped
+    // and the number of likes should be incremented or decremented
+    const handleLikeClick = () => {
+        if (tuit.liked) {
+            dispatch(unlikeTuit(tuit))
+        }
+        else {
+            dispatch(likeTuit(tuit))
+        }
+    }
+    // if the tuit's boolean for liked is true, then the color of the heart should be red
+    const heartIcon = tuit.liked ? <FcLike/> : <AiOutlineHeart/>;
     return (
         <div className="row">
-
-            <img className="col-3" alt="comment-icon" src="../../../../public/tuiter/images/comment.png"/> {tuit.replies}
-            <img className="col-3" alt="retweet-icon" src="./images/retuit.png"/> {tuit.retuits}
-            <img className="col-3" alt="like-icon" src="./images/like.png"/> {tuit.likes}
-            <img className="col-3" alt="share-icon" src="./images/share.png"/>
+            <div className={"col-3"}> <FaRegComment/> {tuit.replies} </div>
+            <div className={"col-3"}> <AiOutlineRetweet/> {tuit.retuits} </div>
+            <button className={"col-3 btn p-0 m-0"} onClick={handleLikeClick}> {heartIcon} {tuit.likes} </button>
+            <div className={"col-3"}> <BsShare/> </div>
         </div>
     );
 };

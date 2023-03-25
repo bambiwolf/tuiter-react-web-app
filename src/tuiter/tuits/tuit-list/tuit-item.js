@@ -1,5 +1,6 @@
 import React from "react";
 import {IoIosCheckmarkCircleOutline} from "react-icons/io";
+import TuitStats from "./tuit-stats";
 const TuitItem = (
     {
         tuit = {
@@ -20,6 +21,7 @@ const TuitItem = (
                 <div className="col-10">
                     <div> <b> {tuit.userName}</b> <IoIosCheckmarkCircleOutline/> {tuit.handle} . {tuit.time}</div>
                     <div>{tuit.tuit}</div>
+                    <div> <TuitStats>{tuit}</TuitStats></div>
                 </div>
             </div>
         </li>

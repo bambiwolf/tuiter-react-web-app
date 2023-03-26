@@ -28,7 +28,7 @@ const TuitItem = (
                 <div className="col-10">
                     <div><i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)}></i></div>
                     <div> <b> {tuit.userName}</b> <IoIosCheckmarkCircleOutline/> {tuit.handle} . {tuit.time}</div>
-                    <div>{tuit.tuit}</div>
+                    <div className={"overflow-wrap"}>{tuit.tuit}</div>
                     <div> <TuitStats
                         key={tuit.id} tuit={tuit}/> </div>
                 </div>

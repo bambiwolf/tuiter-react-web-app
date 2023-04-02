@@ -14,7 +14,6 @@ const TuitList = () => {
     return(
         <ul className="list-group">
             {
-                loading &&
                 tuits.map(tuit =>
                     <TuitItem
                         key={tuit._id} tuit={tuit}/> )

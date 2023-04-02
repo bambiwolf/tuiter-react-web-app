@@ -6,6 +6,7 @@ import {useDispatch} from "react-redux";
 import {likeTuit, unlikeTuit}
     from "../tuits-reducer";
 import {FcLike} from "react-icons/fc";
+import {updateTuitThunk} from "../../../services/tuits-thunks";
 
 
 const TuitStats = (
@@ -35,12 +36,21 @@ const TuitStats = (
         }
     }
     // if the tuit's boolean for liked is true, then the color of the heart should be red
+    //<button className={"col-3 btn p-0 m-0"} onClick={handleLikeClick}> {heartIcon} {tuit.likes} </button>
     const heartIcon = tuit.liked ? <FcLike/> : <AiOutlineHeart/>;
+    const likeChange = tuit.liked ? tuit.likes - 1 : tuit.likes + 1;
     return (
         <div className="row">
             <div className={"col-3"}> <FaRegComment/> {tuit.replies} </div>
             <div className={"col-3"}> <AiOutlineRetweet/> {tuit.retuits} </div>
-            <button className={"col-3 btn p-0 m-0"} onClick={handleLikeClick}> {heartIcon} {tuit.likes} </button>
+            <div className={"col-3"}>
+                Likes: {tuit.likes}
+                <i onClick={() => dispatch(updateTuitThunk({
+                    ...tuit,
+                    likes: likeChange,
+                    liked: !tuit.liked
+                }))} className="bi me-2 text-danger">{heartIcon}</i>
+            </div>
             <div className={"col-3"}> <BsShare/> </div>
         </div>
     );

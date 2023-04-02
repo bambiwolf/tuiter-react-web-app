@@ -10,6 +10,9 @@ const WhatsHappening = () => {
         const newTuit = {
             tuit: whatsHappening,
             image: "nasa.jpg",
+            userName: "NASA",
+            handle: "@NASA",
+            time: "now",
         }
         dispatch(createTuitThunk(newTuit));
     }

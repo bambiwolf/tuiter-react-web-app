@@ -43,6 +43,11 @@ const TuitStats = (
     const dislikeIcon = tuit.disliked ? <AiFillDislike/> : <AiOutlineDislike/>;
     const likeChange = tuit.liked ? tuit.likes - 1 : tuit.likes + 1;
     const dislikeChange = tuit.disliked ? tuit.dislikes - 1 : tuit.dislikes + 1;
+    // if the number of likes + likeChange is less than or equal to 0 or NaN, then the number of likes should be 0
+    // if the number of dislikes + dislikeChange is less than or equal to 0 or NaN, then the number of dislikes should be 0
+    const likeNum = likeChange <= 0 || isNaN(likeChange) ? 0 : likeChange;
+    const dislikeNum = dislikeChange <= 0 || isNaN(dislikeChange) ? 0 : dislikeChange;
+
     return (
         <div className="row">
             <div className={"col-2"}> <FaRegComment/> {tuit.replies} </div>
@@ -51,7 +56,7 @@ const TuitStats = (
                 {tuit.likes}
                 <i onClick={() => dispatch(updateTuitThunk({
                     ...tuit,
-                    likes: likeChange,
+                    likes: likeNum,
                     liked: !tuit.liked
                 }))} className="bi me-2">{heartIcon}</i>
             </div>
@@ -59,7 +64,7 @@ const TuitStats = (
                 {tuit.dislikes}
                 <i onClick={() => dispatch(updateTuitThunk({
                     ...tuit,
-                    dislikes: dislikeChange,
+                    dislikes: dislikeNum,
                     disliked: !tuit.disliked
                 }))} className="bi me-2">{dislikeIcon}</i>
             </div>

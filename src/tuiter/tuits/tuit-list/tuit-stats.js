@@ -47,7 +47,7 @@ const TuitStats = (
         <div className="row">
             <div className={"col-2"}> <FaRegComment/> {tuit.replies} </div>
             <div className={"col-2"}> <AiOutlineRetweet/> {tuit.retuits} </div>
-            <div className={"col-3"}>
+            <div className={"col-2"}>
                 {tuit.likes}
                 <i onClick={() => dispatch(updateTuitThunk({
                     ...tuit,
@@ -55,7 +55,7 @@ const TuitStats = (
                     liked: !tuit.liked
                 }))} className="bi me-2">{heartIcon}</i>
             </div>
-            <div className={"col-3"}>
+            <div className={"col-2"}>
                 {tuit.dislikes}
                 <i onClick={() => dispatch(updateTuitThunk({
                     ...tuit,

@@ -43,8 +43,8 @@ const TuitStats = (
     const dislikeIcon = tuit.disliked ? <AiFillDislike/> : <AiOutlineDislike/>;
     const likeChange = tuit.liked ? tuit.likes - 1 : tuit.likes + 1;
     const dislikeChange = tuit.disliked ? tuit.dislikes - 1 : tuit.dislikes + 1;
-    // if the number of likes + likeChange is less than or equal to 0 or NaN, then the number of likes should be 0
-    // if the number of dislikes + dislikeChange is less than or equal to 0 or NaN, then the number of dislikes should be 0
+    // if likeChange is less than or equal to 0 or NaN, then the number of likes should be 0
+    // if \dislikeChange is less than or equal to 0 or NaN, then the number of dislikes should be 0
     const likeNum = likeChange <= 0 || isNaN(likeChange) ? 0 : likeChange;
     const dislikeNum = dislikeChange <= 0 || isNaN(dislikeChange) ? 0 : dislikeChange;
 
